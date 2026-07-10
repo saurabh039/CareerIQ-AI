@@ -1,0 +1,12 @@
+{
+  "name": "careeriq-ai",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.11.0",
+  "scripts": {
+    "dev:backend": "pnpm --dir apps/backend dev",
+    "dev:frontend": "pnpm --dir apps/frontend dev",
+    "dev:ai": "cd apps/ai-service && venv\\Scripts\\activate && uvicorn app.main:app --reload",
+    "dev": "echo Start backend, frontend and AI service in separate terminals"
+  }
+}

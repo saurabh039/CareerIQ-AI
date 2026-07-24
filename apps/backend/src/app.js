@@ -5,6 +5,7 @@ import morgan from "morgan";
 import healthRoutes from "./routes/health.routes.js";
 import aiRoutes from "./routes/ai.routes.js";
 import errorHandler from "./middleware/error.middleware.js";
+import authRoutes from "./routes/auth.routes.js";
 
 const app = express();
 
@@ -15,6 +16,8 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use("/health", healthRoutes);
 app.use("/api/ai", aiRoutes);
+app.use("/api/auth", authRoutes);
+
 app.use(errorHandler);
 
 // Root Route

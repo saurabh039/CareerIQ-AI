@@ -19,7 +19,7 @@ export const createJob = async (req, res) => {
 
 export const getAllJobs = async (req, res) => {
   try {
-    const jobs = await jobService.getAllJobs();
+    const jobs = await jobService.getAllJobs(req.query);
 
     res.json({
       success: true,

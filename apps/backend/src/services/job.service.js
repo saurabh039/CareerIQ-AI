@@ -14,9 +14,58 @@ export const createJob = async (jobData) => {
   return job;
 };
 
-export const getAllJobs = async () => {
-  return await Job.find().sort({ createdAt: -1 });
-};
+export const getAllJobs = async (query) => {
+  const {
+    keyword,
+    company,
+    location,
+    employmentType,
+    page = 1,
+    limit = 10,
+    sort = "-createdAt",
+  } = query;
+
+  const filter = {};
+
+  if (keyword) {
+    filter.$or = [
+      { title: { $regex: keyword, $options: "i" } },
+      { description: { $regex: keyword, $options: "i" } },
+      { skills: { $regex: keyword, $options: "i" } },
+    ];
+  }
+
+  if (company) {
+    filter.company = { $regex: company, $options: "i" };
+  }
+
+  if (location) {
+    filter.location = { $regex: location, $options: "i" };
+  }
+
+  if (employmentType) {
+    filter.employmentType = employmentType;
+  }
+
+  const skip = (Number(page) - 1) * Number(limit);
+
+  const jobs = await Job.find(filter)
+    .sort(sort)
+    .skip(skip)
+    .limit(Number(limit));
+
+  const total = await Job.countDocuments(filter);
+
+  return {
+    jobs,
+    pagination: {
+      total,
+      page: Number(page),
+      limit: Number(limit),
+      totalPages: Math.ceil(total / limit),
+    },
+  };
+}; 
 
 export const getJobById = async (id) => {
   return await Job.findById(id);

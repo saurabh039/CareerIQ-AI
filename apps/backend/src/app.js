@@ -6,8 +6,10 @@ import healthRoutes from "./routes/health.routes.js";
 import aiRoutes from "./routes/ai.routes.js";
 import errorHandler from "./middleware/error.middleware.js";
 import authRoutes from "./routes/auth.routes.js";
+import jobRoutes from "./routes/job.routes.js";
 
 const app = express();
+
 
 // Middleware
 app.use(cors());
@@ -17,6 +19,7 @@ app.use(express.json());
 app.use("/health", healthRoutes);
 app.use("/api/ai", aiRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/jobs", jobRoutes);
 
 app.use(errorHandler);
 

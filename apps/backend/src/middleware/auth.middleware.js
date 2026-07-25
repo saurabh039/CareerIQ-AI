@@ -2,24 +2,28 @@ import { verifyAccessToken } from "../utils/jwt.js";
 
 export const authenticate = (req, res, next) => {
   try {
-    const auth = req.headers.authorization;
+    const authHeader = req.headers.authorization;
 
-    if (!auth || !auth.startsWith("Bearer ")) {
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return res.status(401).json({
         success: false,
         message: "Access token missing",
       });
     }
 
-    const token = auth.split(" ")[1];
+    const token = authHeader.split(" ")[1];
 
-    req.user = verifyAccessToken(token);
+    const decoded = verifyAccessToken(token);
+
+    req.user = decoded;
 
     next();
-  } catch {
+  } catch (error) {
     return res.status(401).json({
       success: false,
-      message: "Invalid or expired token",
+      message: "Invalid or expired access token",
     });
   }
 };
+
+export default authenticate;

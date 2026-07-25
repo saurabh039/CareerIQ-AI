@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
+from app.api.resume import router as resume_router
 import os
 
 load_dotenv()
@@ -10,6 +11,7 @@ app = FastAPI(
     description="AI Service for CareerIQ AI"
 )
 
+app.include_router(resume_router)
 
 @app.get("/")
 def root():

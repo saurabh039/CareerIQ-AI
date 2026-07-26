@@ -7,4 +7,5 @@ class ResumeParseRequest(BaseModel):
 
 class ResumeParseResponse(BaseModel):
     success: bool
-    text: str
+    rawText: str
+    parsedData: dict

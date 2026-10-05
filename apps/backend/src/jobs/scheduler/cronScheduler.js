@@ -1,10 +1,6 @@
 import cron from "node-cron";
 
 import JobIngestionService from "../services/JobIngestionService.js";
-import JobValidator from "../validators/jobValidator.js";
-import JobNormalizer from "../normalizers/jobNormalizer.js";
-import DuplicateDetectionService from "../services/DuplicateDetectionService.js";
-import StorageService from "../services/JobStorageService.js";
 
 class CronScheduler {
 
@@ -21,15 +17,9 @@ class CronScheduler {
 
                 const ingestion = new JobIngestionService();
 
-                let jobs = await ingestion.syncAllJobs();
-
-                jobs = JobValidator.validateAll(jobs);
-
-                jobs = DuplicateDetectionService.removeDuplicates(jobs);
-
-                const result = await StorageService.saveJobs(jobs);
-
-                console.log(result);
+                const jobs = await ingestion.syncAllJobs();
+                
+                console.log(`Job Sync Completed. Processed ${jobs.length} jobs.`);
 
             } catch (err) {
 

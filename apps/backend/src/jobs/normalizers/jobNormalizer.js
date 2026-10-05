@@ -19,7 +19,7 @@ class JobNormalizer {
             description: job.description || "",
             skills: job.skills || [],
             employmentType: job.employmentType || "",
-            salary: job.salary || "",
+            salary: job.salary || null,
             experienceLevel: job.experienceLevel || "",
             source: source,
             sourceUrl: job.sourceUrl || "",

@@ -1,7 +1,7 @@
-import JobSource from "./JobSource.js";
+import JobSource from "../base/JobSource.js";
 
-import scraper from "../scraper/playwrightScraper.js";
-import parser from "../scraper/htmlParser.js";
+import scraper from "../../scraper/playwrightScraper.js";
+import parser from "../../scraper/htmlParser.js";
 
 class LinkedInAdapter extends JobSource {
 

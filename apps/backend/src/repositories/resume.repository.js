@@ -4,6 +4,17 @@ export const createResume = async (resumeData) => {
   return await Resume.create(resumeData);
 };
 
+export const updateResumeStatus = async (
+  resumeId,
+  status
+) => {
+  return await Resume.findByIdAndUpdate(
+    resumeId,
+    { status },
+    { new: true }
+  );
+};
+
 export const getUserResumes = async (userId) => {
   return await Resume.find({ userId }).sort({ createdAt: -1 });
 };

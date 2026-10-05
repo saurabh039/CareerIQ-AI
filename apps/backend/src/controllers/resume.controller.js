@@ -1,9 +1,12 @@
- 
 import * as resumeService from "../services/resume.service.js";
 import {
   successResponse,
   errorResponse,
 } from "../utils/response.js";
+
+const getUserId = (req) => {
+  return req.user.userId || req.user.id || req.user._id;
+};
 
 export const uploadResume = async (req, res) => {
   try {
@@ -16,8 +19,17 @@ export const uploadResume = async (req, res) => {
       });
     }
 
+    const userId = getUserId(req);
+
+    if (!userId) {
+      return res.status(401).json({
+        success: false,
+        message: "User ID not found in authentication token",
+      });
+    }
+
     const resume = await resumeService.createResume({
-      userId: req.user.userId || req.user.id || req.user._id,
+      userId,
       originalFileName: file.originalname,
       storedFileName: file.filename,
       fileType: file.mimetype.includes("pdf") ? "pdf" : "docx",
@@ -28,34 +40,35 @@ export const uploadResume = async (req, res) => {
     });
 
     return successResponse(
-        res,
-        resume,
-        "Resume uploaded successfully",
-        201
-        );
+      res,
+      resume,
+      "Resume uploaded successfully",
+      201
+    );
   } catch (err) {
-    return errorResponse(
-    res,
-    err.message,
-    500
-);
+    return errorResponse(res, err.message, 500);
   }
 };
 
 export const getUserResumes = async (req, res) => {
   try {
-    const resumes = await resumeService.getUserResumes(req.user.id);
+    const userId = getUserId(req);
 
-    res.json({
+    if (!userId) {
+      return res.status(401).json({
+        success: false,
+        message: "User ID not found in authentication token",
+      });
+    }
+
+    const resumes = await resumeService.getUserResumes(userId);
+
+    return res.json({
       success: true,
       data: resumes,
     });
   } catch (err) {
-    return errorResponse(
-    res,
-    err.message,
-    500
-);
+    return errorResponse(res, err.message, 500);
   }
 };
 
@@ -70,16 +83,12 @@ export const getResumeById = async (req, res) => {
       });
     }
 
-    res.json({
+    return res.json({
       success: true,
       data: resume,
     });
   } catch (err) {
-    return errorResponse(
-    res,
-    err.message,
-    500
-);
+    return errorResponse(res, err.message, 500);
   }
 };
 
@@ -94,15 +103,11 @@ export const deleteResume = async (req, res) => {
       });
     }
 
-    res.json({
+    return res.json({
       success: true,
       message: "Resume deleted successfully",
     });
   } catch (err) {
-    return errorResponse(
-    res,
-    err.message,
-    
-);
+    return errorResponse(res, err.message, 500);
   }
 };

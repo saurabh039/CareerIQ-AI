@@ -1,11 +1,12 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import JobList from "./pages/JobList";
-import { Link } from "react-router-dom";
 import JobDetails from "./pages/JobDetails";
+import Profile from "./pages/Profile/Profile";
+import Resume from "./pages/Resume/Resume";
 
 function Dashboard() {
   return (
@@ -18,6 +19,13 @@ function Dashboard() {
 
       <Link to="/jobs">
         <button>View Jobs</button>
+      </Link>
+
+      <br />
+      <br />
+
+      <Link to="/resume">
+        <button>Upload Resume</button>
       </Link>
     </div>
   );
@@ -43,6 +51,24 @@ function App() {
         />
 
         <Route
+          path="/resume"
+          element={
+            <ProtectedRoute>
+              <Resume />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
           path="/jobs"
           element={
             <ProtectedRoute>
@@ -59,8 +85,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-
       </Routes>
     </BrowserRouter>
   );

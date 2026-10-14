@@ -8,25 +8,47 @@ import JobDetails from "./pages/JobDetails";
 import Profile from "./pages/Profile/Profile";
 import Resume from "./pages/Resume/Resume";
 
+import { useAuth } from "./context/AuthContext";
+import { Button } from "./components/ui/button";
+
 function Dashboard() {
+  const { user, logout } = useAuth();
+
   return (
-    <div style={{ padding: 40 }}>
-      <h1>🎉 CareerIQ AI Dashboard</h1>
+    <div className="min-h-screen bg-background px-4 py-12">
+      <div className="mx-auto max-w-2xl space-y-8 rounded-2xl border bg-card p-8 shadow-sm">
+        <div className="border-b pb-6">
+          <h1 className="text-3xl font-bold tracking-tight">🎉 CareerIQ AI Dashboard</h1>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Logged in as: <span className="font-semibold text-foreground">{user?.email || "Authenticated User"}</span>
+            {user?.fullName && <span className="text-muted-foreground"> ({user.fullName})</span>}
+          </p>
+        </div>
 
-      <p>Authentication Successful</p>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <Link to="/jobs">
+            <Button variant="outline" className="w-full justify-center">
+              💼 View Jobs
+            </Button>
+          </Link>
+          <Link to="/resume">
+            <Button variant="outline" className="w-full justify-center">
+              📄 Resume Intelligence
+            </Button>
+          </Link>
+          <Link to="/profile">
+            <Button variant="outline" className="w-full justify-center">
+              👤 Career Profile
+            </Button>
+          </Link>
+        </div>
 
-      <br />
-
-      <Link to="/jobs">
-        <button>View Jobs</button>
-      </Link>
-
-      <br />
-      <br />
-
-      <Link to="/resume">
-        <button>Upload Resume</button>
-      </Link>
+        <div className="border-t pt-6 flex justify-end">
+          <Button variant="destructive" onClick={logout}>
+            Sign Out
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }

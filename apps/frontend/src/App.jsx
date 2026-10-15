@@ -7,6 +7,10 @@ import JobList from "./pages/JobList";
 import JobDetails from "./pages/JobDetails";
 import Profile from "./pages/Profile/Profile";
 import Resume from "./pages/Resume/Resume";
+import PracticeHome from "./pages/Practice/PracticeHome";
+import PracticeSession from "./pages/Practice/PracticeSession";
+import PracticeResults from "./pages/Practice/PracticeResults";
+import PracticeHistory from "./pages/Practice/PracticeHistory";
 
 import { useAuth } from "./context/AuthContext";
 import { Button } from "./components/ui/button";
@@ -25,19 +29,24 @@ function Dashboard() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <Link to="/practice">
+            <Button variant="default" className="w-full justify-center h-12 text-sm font-semibold">
+              🎯 Practice Intelligence
+            </Button>
+          </Link>
           <Link to="/jobs">
-            <Button variant="outline" className="w-full justify-center">
+            <Button variant="outline" className="w-full justify-center h-12 text-sm font-semibold">
               💼 View Jobs
             </Button>
           </Link>
           <Link to="/resume">
-            <Button variant="outline" className="w-full justify-center">
+            <Button variant="outline" className="w-full justify-center h-12 text-sm font-semibold">
               📄 Resume Intelligence
             </Button>
           </Link>
           <Link to="/profile">
-            <Button variant="outline" className="w-full justify-center">
+            <Button variant="outline" className="w-full justify-center h-12 text-sm font-semibold">
               👤 Career Profile
             </Button>
           </Link>
@@ -68,6 +77,42 @@ function App() {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/practice"
+          element={
+            <ProtectedRoute>
+              <PracticeHome />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/practice/session/:id"
+          element={
+            <ProtectedRoute>
+              <PracticeSession />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/practice/results/:id"
+          element={
+            <ProtectedRoute>
+              <PracticeResults />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/practice/history"
+          element={
+            <ProtectedRoute>
+              <PracticeHistory />
             </ProtectedRoute>
           }
         />

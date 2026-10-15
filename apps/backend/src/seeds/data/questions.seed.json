@@ -1,0 +1,631 @@
+[
+  {
+    "prompt": "If a train traveling at 72 km/h crosses a 200-meter long platform in 25 seconds, what is the length of the train?",
+    "category": "aptitude",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "250 meters" },
+      { "id": "B", "text": "300 meters" },
+      { "id": "C", "text": "350 meters" },
+      { "id": "D", "text": "400 meters" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Speed = 72 km/h = 72 * (5/18) = 20 m/s. Total distance covered in 25 seconds = 20 * 25 = 500 meters. Total distance = Length of train + Length of platform (200m). Length of train = 500 - 200 = 300 meters.",
+    "skills": ["Quantitative Aptitude", "Speed & Distance"],
+    "topics": ["Trains", "Speed Calculation"],
+    "role": "general"
+  },
+  {
+    "prompt": "A can finish a task in 12 days and B can finish the same task in 18 days. If they work together for 4 days, what fraction of the work remains?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "4/9" },
+      { "id": "B", "text": "5/9" },
+      { "id": "C", "text": "1/3" },
+      { "id": "D", "text": "2/3" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A's 1-day work = 1/12, B's 1-day work = 1/18. Combined 1-day work = 1/12 + 1/18 = 5/36. In 4 days, work completed = 4 * (5/36) = 20/36 = 5/9. Remaining work = 1 - 5/9 = 4/9.",
+    "skills": ["Quantitative Aptitude", "Time & Work"],
+    "topics": ["Work Efficiency", "Fractions"],
+    "role": "general"
+  },
+  {
+    "prompt": "The ratio of the ages of Priya and Rohan is 4:5. Six years hence, the ratio will become 5:6. What is Priya's current age?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "20 years" },
+      { "id": "B", "text": "24 years" },
+      { "id": "C", "text": "30 years" },
+      { "id": "D", "text": "18 years" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Let ages be 4x and 5x. (4x + 6) / (5x + 6) = 5/6 => 6(4x + 6) = 5(5x + 6) => 24x + 36 = 25x + 30 => x = 6. Priya's current age = 4x = 4 * 6 = 24 years.",
+    "skills": ["Logical Reasoning", "Quantitative Aptitude"],
+    "topics": ["Ratios", "Age Problems"],
+    "role": "general"
+  },
+  {
+    "prompt": "What is the next number in the series: 7, 14, 28, 56, 112, ?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "168" },
+      { "id": "B", "text": "224" },
+      { "id": "C", "text": "196" },
+      { "id": "D", "text": "210" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Each subsequent number in the sequence is obtained by multiplying the preceding number by 2: 112 * 2 = 224.",
+    "skills": ["Logical Reasoning"],
+    "topics": ["Number Series", "Pattern Recognition"],
+    "role": "general"
+  },
+  {
+    "prompt": "An article marked at $80 is sold at a discount of 15%. If the seller still makes a profit of 20%, what was the cost price of the article?",
+    "category": "aptitude",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "$56.67" },
+      { "id": "B", "text": "$52.00" },
+      { "id": "C", "text": "$60.00" },
+      { "id": "D", "text": "$64.00" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Selling Price = 80 - (0.15 * 80) = $68. Since Selling Price represents a 20% profit on Cost Price: 1.20 * CP = 68 => CP = 68 / 1.20 = $56.67.",
+    "skills": ["Quantitative Aptitude"],
+    "topics": ["Profit & Loss", "Percentages"],
+    "role": "general"
+  },
+  {
+    "prompt": "In a group of 60 students, 35 play football, 30 play cricket, and 15 play both. How many students play neither sport?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "5" },
+      { "id": "B", "text": "10" },
+      { "id": "C", "text": "15" },
+      { "id": "D", "text": "20" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Total playing at least one = Football + Cricket - Both = 35 + 30 - 15 = 50. Total playing neither = 60 - 50 = 10.",
+    "skills": ["Logical Reasoning"],
+    "topics": ["Set Theory", "Venn Diagrams"],
+    "role": "general"
+  },
+  {
+    "prompt": "A bag contains 4 red balls, 5 blue balls, and 6 green balls. If one ball is drawn at random, what is the probability that it is NOT blue?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "1/3" },
+      { "id": "B", "text": "2/3" },
+      { "id": "C", "text": "3/5" },
+      { "id": "D", "text": "4/15" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Total balls = 4 + 5 + 6 = 15. Balls that are NOT blue = 4 + 6 = 10. Probability = 10/15 = 2/3.",
+    "skills": ["Quantitative Aptitude"],
+    "topics": ["Probability"],
+    "role": "general"
+  },
+  {
+    "prompt": "If PIPE is written as 169165 in a particular code, how will SWAN be written in that same code?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "1923114" },
+      { "id": "B", "text": "1922114" },
+      { "id": "C", "text": "1823114" },
+      { "id": "D", "text": "1923214" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Each letter is represented by its alphabetical position: P=16, I=9, P=16, E=5. For SWAN: S=19, W=23, A=1, N=14 => 1923114.",
+    "skills": ["Logical Reasoning"],
+    "topics": ["Coding & Decoding"],
+    "role": "general"
+  },
+  {
+    "prompt": "Two pipes A and B can fill a cistern in 20 minutes and 30 minutes respectively. If both pipes are opened together, how long will it take to fill the cistern?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "10 minutes" },
+      { "id": "B", "text": "12 minutes" },
+      { "id": "C", "text": "15 minutes" },
+      { "id": "D", "text": "18 minutes" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Part filled in 1 minute = 1/20 + 1/30 = (3 + 2)/60 = 5/60 = 1/12. Therefore, both pipes together take 12 minutes.",
+    "skills": ["Quantitative Aptitude"],
+    "topics": ["Pipes & Cisterns", "Time & Work"],
+    "role": "general"
+  },
+  {
+    "prompt": "The price of petrol increases by 25%. By what percentage must a motorist reduce consumption so that expenditure remains unchanged?",
+    "category": "aptitude",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "20%" },
+      { "id": "B", "text": "25%" },
+      { "id": "C", "text": "16.67%" },
+      { "id": "D", "text": "30%" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Reduction formula = [r / (100 + r)] * 100. For r = 25: [25 / (100 + 25)] * 100 = (25/125) * 100 = 20%.",
+    "skills": ["Quantitative Aptitude"],
+    "topics": ["Percentages", "Expenditure"],
+    "role": "general"
+  },
+  {
+    "prompt": "At what angle are the hands of a clock inclined at 3:30?",
+    "category": "aptitude",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "60 degrees" },
+      { "id": "B", "text": "75 degrees" },
+      { "id": "C", "text": "85 degrees" },
+      { "id": "D", "text": "90 degrees" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Angle formula: |(30 * H) - (11/2 * M)|. For H=3, M=30: |(30*3) - (11/2 * 30)| = |90 - 165| = 75 degrees.",
+    "skills": ["Logical Reasoning"],
+    "topics": ["Clocks", "Geometry"],
+    "role": "general"
+  },
+  {
+    "prompt": "Introducing a boy, a girl says, 'He is the son of the only daughter of my paternal grandfather.' How is the boy related to the girl?",
+    "category": "aptitude",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Brother" },
+      { "id": "B", "text": "Cousin" },
+      { "id": "C", "text": "Uncle" },
+      { "id": "D", "text": "Nephew" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The only daughter of the girl's paternal grandfather is the girl's aunt (father's sister). The son of her aunt is her cousin.",
+    "skills": ["Logical Reasoning"],
+    "topics": ["Blood Relations"],
+    "role": "general"
+  },
+  {
+    "prompt": "The average of 7 consecutive integers is 20. What is the largest of these integers?",
+    "category": "aptitude",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "22" },
+      { "id": "B", "text": "23" },
+      { "id": "C", "text": "24" },
+      { "id": "D", "text": "25" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "For an odd number of consecutive integers, the average is the median (middle) element. If the 4th element is 20, the sequence is 17, 18, 19, 20, 21, 22, 23. The largest is 23.",
+    "skills": ["Quantitative Aptitude"],
+    "topics": ["Averages", "Consecutive Numbers"],
+    "role": "general"
+  },
+  {
+    "prompt": "How many different 4-letter words can be formed from the letters of the word 'LOGIC' without repetition?",
+    "category": "aptitude",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "60" },
+      { "id": "B", "text": "120" },
+      { "id": "C", "text": "24" },
+      { "id": "D", "text": "72" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'LOGIC' has 5 distinct letters. Number of ways to choose and arrange 4 letters is P(5, 4) = 5 * 4 * 3 * 2 = 120.",
+    "skills": ["Quantitative Aptitude"],
+    "topics": ["Permutations & Combinations"],
+    "role": "general"
+  },
+  {
+    "prompt": "In JavaScript, what is the output of `console.log(typeof NaN)`?",
+    "category": "technical",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "'undefined'" },
+      { "id": "B", "text": "'number'" },
+      { "id": "C", "text": "'nan'" },
+      { "id": "D", "text": "'object'" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In JavaScript, NaN (Not-a-Number) is a special numeric value conforming to the IEEE 754 floating point standard. Therefore, `typeof NaN` evaluates to 'number'.",
+    "skills": ["JavaScript"],
+    "topics": ["Data Types", "Type Coercion"],
+    "role": "frontend-developer"
+  },
+  {
+    "prompt": "Which React hook should be used to memoize the computed result of an expensive calculation across re-renders?",
+    "category": "technical",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "useCallback" },
+      { "id": "B", "text": "useEffect" },
+      { "id": "C", "text": "useMemo" },
+      { "id": "D", "text": "useRef" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "`useMemo` returns a memoized value that only recalculates when one of its dependencies changes. `useCallback` returns a memoized callback function definition.",
+    "skills": ["React"],
+    "topics": ["React Hooks", "Performance Optimization"],
+    "role": "frontend-developer"
+  },
+  {
+    "prompt": "In Node.js, in which phase of the Event Loop are `setImmediate()` callbacks executed?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Timers phase" },
+      { "id": "B", "text": "Poll phase" },
+      { "id": "C", "text": "Check phase" },
+      { "id": "D", "text": "Close callbacks phase" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "`setImmediate()` callbacks are queued to run in the 'Check' phase of the libuv event loop, right after the 'Poll' phase completes.",
+    "skills": ["Node.js"],
+    "topics": ["Event Loop", "Asynchronous I/O"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "Which HTTP status code is most appropriate when a requested resource requires client authentication that was not provided or failed?",
+    "category": "technical",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "400 Bad Request" },
+      { "id": "B", "text": "401 Unauthorized" },
+      { "id": "C", "text": "403 Forbidden" },
+      { "id": "D", "text": "404 Not Found" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "HTTP 401 Unauthorized specifically indicates that the request lacks valid authentication credentials. HTTP 403 Forbidden means the server recognizes the client but refuses authorization.",
+    "skills": ["REST APIs", "HTTP"],
+    "topics": ["HTTP Status Codes", "API Design"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "In MongoDB, which index type provides efficient full-text search capability across string fields?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Hashed index" },
+      { "id": "B", "text": "Geospatial 2dsphere index" },
+      { "id": "C", "text": "Text index" },
+      { "id": "D", "text": "Compound ascending index" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "MongoDB's text index creates an inverted index to support text search queries on string fields, tokenizing words and handling stemming.",
+    "skills": ["MongoDB", "Database"],
+    "topics": ["Indexing", "Text Search"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "What is the primary architectural difference between SQL (relational) and NoSQL document databases?",
+    "category": "technical",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "SQL databases cannot store numbers" },
+      { "id": "B", "text": "NoSQL document stores use schema-less or dynamic JSON-like documents, whereas relational databases enforce rigid tabular schemas with foreign key constraints" },
+      { "id": "C", "text": "SQL databases only run on Windows while NoSQL runs on Linux" },
+      { "id": "D", "text": "NoSQL does not support indexing" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Document databases (like MongoDB) store semi-structured BSON/JSON documents with flexible schemas, while relational databases use predefined tables, rows, columns, and foreign keys.",
+    "skills": ["Database", "System Architecture"],
+    "topics": ["SQL vs NoSQL", "Data Modeling"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "In Git, what does the command `git checkout -b feature/login` do?",
+    "category": "technical",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Deletes the branch feature/login" },
+      { "id": "B", "text": "Creates a new branch named 'feature/login' and immediately switches to it" },
+      { "id": "C", "text": "Reverts the last commit on the current branch" },
+      { "id": "D", "text": "Pushes the current branch to origin" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The `-b` flag instructs git to create the branch if it does not already exist, and `checkout` switches the working tree HEAD to that newly created branch.",
+    "skills": ["Git"],
+    "topics": ["Version Control", "Branching"],
+    "role": "general"
+  },
+  {
+    "prompt": "What will the following JavaScript expression evaluate to: `[1, 2, 3] + [4, 5, 6]`?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "[1, 2, 3, 4, 5, 6]" },
+      { "id": "B", "text": "'1,2,34,5,6'" },
+      { "id": "C", "text": "NaN" },
+      { "id": "D", "text": "TypeError: Cannot add arrays" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The addition operator (+) coerces both arrays into primitive strings via their `toString()` methods ('1,2,3' and '4,5,6'), then concatenates them into '1,2,34,5,6'.",
+    "skills": ["JavaScript"],
+    "topics": ["Type Coercion", "Array Manipulation"],
+    "role": "frontend-developer"
+  },
+  {
+    "prompt": "Which algorithm is used by React's reconciliation engine (Fiber) to compute minimal DOM updates efficiently?",
+    "category": "technical",
+    "difficulty": "hard",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Bellman-Ford Algorithm" },
+      { "id": "B", "text": "Heuristic O(n) Diffing Algorithm" },
+      { "id": "C", "text": "Binary Search Tree traversal in O(log n)" },
+      { "id": "D", "text": "Dijkstra's Shortest Path" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A complete tree comparison takes O(n^3) time. React uses a heuristic O(n) diffing algorithm based on assumptions: elements of different types produce different trees, and keys remain stable across renders.",
+    "skills": ["React"],
+    "topics": ["Reconciliation", "Virtual DOM", "Internal Architecture"],
+    "role": "frontend-developer"
+  },
+  {
+    "prompt": "What is a JavaScript closure?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "A function bundled together with references to its surrounding lexical environment" },
+      { "id": "B", "text": "A method to immediately terminate the execution of a Node.js process" },
+      { "id": "C", "text": "A CSS selector that closes open HTML modal windows" },
+      { "id": "D", "text": "A built-in data structure that behaves like a doubly linked list" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A closure gives an inner function access to an outer function's scope even after the outer function has finished executing.",
+    "skills": ["JavaScript"],
+    "topics": ["Closures", "Lexical Scope"],
+    "role": "frontend-developer"
+  },
+  {
+    "prompt": "What is the key difference between `Promise.all()` and `Promise.allSettled()`?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "`Promise.all()` rejects immediately upon any rejection, while `Promise.allSettled()` waits for all promises to resolve or reject" },
+      { "id": "B", "text": "`Promise.allSettled()` only works with HTTP fetch calls" },
+      { "id": "C", "text": "`Promise.all()` runs synchronously on the main thread" },
+      { "id": "D", "text": "There is no difference; they are aliases" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "`Promise.all()` short-circuits on the first rejected promise. `Promise.allSettled()` never short-circuits and returns an array of outcome objects with status 'fulfilled' or 'rejected'.",
+    "skills": ["JavaScript", "Async Programming"],
+    "topics": ["Promises", "Asynchronous JavaScript"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "In Express.js, how does the framework distinguish an error-handling middleware from regular middleware?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "By checking if the middleware function takes exactly 4 arguments: `(err, req, res, next)`" },
+      { "id": "B", "text": "By registering it with `app.error()` instead of `app.use()`" },
+      { "id": "C", "text": "By throwing an unhandled exception inside the function body" },
+      { "id": "D", "text": "By adding the word 'error' in the function's name" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Express inspects `fn.length` (the function's arity). Functions with exactly 4 parameters `(err, req, res, next)` are identified and executed only when an error is passed to `next(err)`.",
+    "skills": ["Node.js", "Express.js"],
+    "topics": ["Middleware", "Error Handling"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "Which HTTP methods are defined as idempotent according to the HTTP/1.1 specification?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "GET, PUT, DELETE, HEAD, OPTIONS" },
+      { "id": "B", "text": "POST and PATCH only" },
+      { "id": "C", "text": "All HTTP methods are idempotent" },
+      { "id": "D", "text": "POST, PUT, and DELETE only" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "An idempotent method can be called multiple times with the exact same side-effect on the server. GET, HEAD, PUT, DELETE, and OPTIONS are idempotent; POST and PATCH are not guaranteed to be.",
+    "skills": ["REST APIs", "HTTP"],
+    "topics": ["API Design", "Idempotence"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "In modern JWT authentication, what are the three parts separated by periods (.) in a token?",
+    "category": "technical",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Header, Payload, Signature" },
+      { "id": "B", "text": "Username, Password, Secret" },
+      { "id": "C", "text": "Algorithm, Timestamp, Checksum" },
+      { "id": "D", "text": "Issuer, Subject, Audience" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A JSON Web Token consists of three base64url-encoded parts: Header (metadata/algorithm), Payload (claims/user data), and Signature (HMAC/RSA verification hash).",
+    "skills": ["Web Security", "Authentication"],
+    "topics": ["JWT", "Tokens"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "In MongoDB aggregation, which stage is used to perform a left outer join to an unsharded collection in the same database?",
+    "category": "technical",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "$join" },
+      { "id": "B", "text": "$lookup" },
+      { "id": "C", "text": "$merge" },
+      { "id": "D", "text": "$combine" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "`$lookup` performs a left outer join to an unsharded collection in the same database to filter in documents from the 'joined' collection for processing.",
+    "skills": ["MongoDB", "Database"],
+    "topics": ["Aggregation Pipeline", "Joins"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "According to the CAP theorem for distributed systems, what does 'P' represent?",
+    "category": "technical",
+    "difficulty": "hard",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Performance optimization" },
+      { "id": "B", "text": "Partition tolerance — the system continues to operate despite arbitrary message loss or network partition" },
+      { "id": "C", "text": "Parallel processing across nodes" },
+      { "id": "D", "text": "Persistent storage durability" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "In CAP theorem, P stands for Partition Tolerance: the cluster continues to function despite communication breakdowns and lost network messages between nodes.",
+    "skills": ["System Architecture", "Distributed Systems"],
+    "topics": ["CAP Theorem", "High Availability"],
+    "role": "backend-developer"
+  },
+  {
+    "prompt": "You notice that a critical production bug has been reported on a feature your teammate deployed yesterday, and the teammate is currently offline. What is the most professional initial response?",
+    "category": "hr",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Wait until the teammate returns to work tomorrow so they can fix their own code" },
+      { "id": "B", "text": "Immediately alert stakeholders, investigate the root cause, determine if a rollback or hotfix is viable, and document findings clearly for the team" },
+      { "id": "C", "text": "Publicly point out in the team channel that the teammate made a coding error" },
+      { "id": "D", "text": "Delete the feature from the repository without telling anyone" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Professional engineering emphasizes team collective ownership, transparent communication with stakeholders, mitigating customer impact with urgency, and documenting the incident blamelessly.",
+    "skills": ["Incident Management", "Communication"],
+    "topics": ["Production Support", "Teamwork"],
+    "role": "general"
+  },
+  {
+    "prompt": "During a sprint planning meeting, product leadership asks your team to deliver a complex feature in 2 weeks that your engineering estimates show requires at least 4 weeks. How should you handle this situation?",
+    "category": "hr",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Accept the 2-week deadline and plan to work 16 hours a day with no testing" },
+      { "id": "B", "text": "Refuse abruptly and say it is completely impossible without offering alternatives" },
+      { "id": "C", "text": "Transparently explain the estimate breakdown, negotiate a minimum viable scope (MVP) that fits in 2 weeks, and phase the remaining enhancements into the subsequent sprint" },
+      { "id": "D", "text": "Agree verbally to the 2-week deadline but knowingly deliver only half of the requirements when the time expires" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Collaborative trade-off negotiation is key: communicating technical constraints transparently, offering scope adjustments, and aligning on an achievable MVP delivers value without compromising quality.",
+    "skills": ["Negotiation", "Agile Planning"],
+    "topics": ["Expectation Management", "Estimation"],
+    "role": "general"
+  },
+  {
+    "prompt": "A junior engineer submits a pull request that functions correctly but violates several team architectural conventions and lacks error handling. How should you provide feedback?",
+    "category": "hr",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Reject the pull request immediately with the comment 'Bad code'" },
+      { "id": "B", "text": "Silently rewrite all the code yourself and merge it without saying anything" },
+      { "id": "C", "text": "Approve the PR and hope someone else catches it in production" },
+      { "id": "D", "text": "Acknowledge the working functionality, constructively point out specific architectural guidelines with code examples or docs, and offer a quick sync to walk through improvements" }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Effective code review feedback is constructive, educational, and empathetic. Pointing to team standards and providing guidance nurtures team growth while preserving code quality.",
+    "skills": ["Mentorship", "Code Review"],
+    "topics": ["Constructive Feedback", "Engineering Culture"],
+    "role": "general"
+  },
+  {
+    "prompt": "You strongly disagree with a senior architect's proposed design for a new microservice. What is the most effective approach to resolve the disagreement?",
+    "category": "hr",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Prepare a concise comparison highlighting the pros, cons, and performance/scalability trade-offs of both options with objective data, and discuss it professionally" },
+      { "id": "B", "text": "Complain to the engineering manager behind the architect's back" },
+      { "id": "C", "text": "Ignore the architect and secretly implement your preferred design" },
+      { "id": "D", "text": "Argue aggressively during the architecture review meeting until the architect gives up" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Technical disagreements should be grounded in evidence, measurable trade-offs, and objective comparison rather than personal authority or emotional argument.",
+    "skills": ["Conflict Resolution", "Technical Communication"],
+    "topics": ["Architecture Decision", "Collaboration"],
+    "role": "general"
+  },
+  {
+    "prompt": "If you are halfway through a task and realize that an unforeseen blocker will prevent you from meeting the promised deadline, what should you do first?",
+    "category": "hr",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Keep quiet until the deadline passes and explain the blocker only when asked" },
+      { "id": "B", "text": "Proactively communicate the blocker and revised timeline to your team lead and stakeholders as soon as discovered, along with proposed next steps" },
+      { "id": "C", "text": "Rush through the implementation, bypassing all security and unit tests to meet the date" },
+      { "id": "D", "text": "Blame another department for giving incomplete requirements" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Early, proactive communication of risks gives teams time to re-prioritize, reallocate resources, or adjust stakeholder expectations before deadlines fail.",
+    "skills": ["Accountability", "Stakeholder Communication"],
+    "topics": ["Risk Management", "Transparency"],
+    "role": "general"
+  },
+  {
+    "prompt": "Your engineering manager gives you constructive feedback that your pull request descriptions are too sparse, making code reviews slow. How should you respond?",
+    "category": "hr",
+    "difficulty": "easy",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Take it personally and argue that good code doesn't need explanations" },
+      { "id": "B", "text": "Accept the feedback openly, ask for examples of great PR templates the team uses, and adopt a structured description format in all subsequent PRs" },
+      { "id": "C", "text": "Stop submitting pull requests" },
+      { "id": "D", "text": "Ignore the feedback and continue submitting without descriptions" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Receptiveness to feedback and a growth mindset are essential professional engineering qualities that foster team velocity and effective collaboration.",
+    "skills": ["Feedback Reception", "Continuous Improvement"],
+    "topics": ["Growth Mindset", "Communication"],
+    "role": "general"
+  },
+  {
+    "prompt": "You inadvertently introduced a database migration script that caused 10 minutes of read degradation for users. What is the best immediate action?",
+    "category": "hr",
+    "difficulty": "medium",
+    "type": "mcq",
+    "options": [
+      { "id": "A", "text": "Attempt to cover up the incident logs and hope no one reports it" },
+      { "id": "B", "text": "Take ownership immediately, assist with stabilizing the database, conduct a blameless post-mortem, and write regression tests/safeguards to prevent recurrence" },
+      { "id": "C", "text": "Blame the database vendor's cloud service" },
+      { "id": "D", "text": "Submit resignation immediately" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Integrity, rapid mitigation, blameless post-mortems, and building structural preventative safeguards demonstrate mature engineering ownership.",
+    "skills": ["Ownership", "Incident Management"],
+    "topics": ["Blameless Culture", "Post-Mortem"],
+    "role": "general"
+  }
+]

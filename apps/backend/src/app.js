@@ -10,6 +10,7 @@ import authRoutes from "./routes/auth.routes.js";
 import jobRoutes from "./routes/job.routes.js";
 import resumeRoutes from "./routes/resume.routes.js";
 import studentProfileRoutes from "./routes/studentProfile.routes.js";
+import practiceRoutes from "./routes/practice.routes.js";
 
 const app = express();
 
@@ -18,17 +19,6 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
-
-// Routes
-app.use("/health", healthRoutes);
-app.use("/api/ai", aiRoutes);
-app.use("/api/auth", authRoutes);
-app.use("/api/jobs", jobRoutes);
-app.use("/api/v1/resumes", resumeRoutes);
-app.use("/api/v1/profile", studentProfileRoutes);
-
-// Error handler
-app.use(errorHandler);
 
 // Root Route
 app.get("/", (req, res) => {
@@ -39,5 +29,17 @@ app.get("/", (req, res) => {
     message: "Backend is running successfully 🚀",
   });
 });
+
+// Routes
+app.use("/health", healthRoutes);
+app.use("/api/ai", aiRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/jobs", jobRoutes);
+app.use("/api/v1/resumes", resumeRoutes);
+app.use("/api/v1/profile", studentProfileRoutes);
+app.use("/api/v1/practice", practiceRoutes);
+
+// Error handler
+app.use(errorHandler);
 
 export default app;
